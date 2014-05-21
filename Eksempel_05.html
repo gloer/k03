@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Hva heter du?</title>
+</head>
+<body>
+Mitt fornavn er:  
+<input type="text" id="fornavn">
+Mitt etternavn er: 
+<input type="text" id="etternavn">
+<button id="btn">Vis mitt fulle navn</button>
+<div id="fulltNavn"></div>
+
+<script>
+	var fornavn = document.getElementById("fornavn");
+	var etternavn = document.getElementById("etternavn");
+	var btn = document.getElementById("btn");
+	var fulltNavn = document.getElementById("fulltNavn");
+
+	btn.onclick = function() {
+		var navn = fornavn.value + " " + etternavn.value;
+		fulltNavn.innerHTML = "Mitt navn er " + navn;
+	}
+
+</script>
+
+</body>
+</html>

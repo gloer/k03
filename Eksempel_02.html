@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Hva heter du?</title>
+</head>
+<body>
+<input type="text" id="navn">
+<button id="btn">Si meg hva du heter</button>
+
+<script>
+	var navn = document.getElementById("navn");
+	var btn = document.getElementById("btn");
+
+	btn.onclick = function() {
+		alert("Du heter " + navn.value);
+	}
+</script>
+</body>
+</html>
